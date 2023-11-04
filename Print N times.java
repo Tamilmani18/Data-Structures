@@ -27,7 +27,7 @@ public class Practice {
     }
 }
 
-// Print Number n times using Recursion
+// Print Number 0 to n times using Recursion
 
 public class A{
 	static int i=1;
@@ -41,6 +41,22 @@ public class A{
 			test(n);
 		}
 	}
+	public static void main(String[] args) {
+		test(5);
+	}
+}
+
+// Print Number n to 0 times using Recursion
+
+public class A{
+	static void test(int n) {
+		if(n<=0)
+			return;
+		else
+			System.out.print(n+" ");
+			test(n-1);
+	}
+	
 	public static void main(String[] args) {
 		test(5);
 	}
