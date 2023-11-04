@@ -27,7 +27,7 @@ public class Practice {
     }
 }
 
-// Print Number 0 to n times using Recursion
+// Print Number 1 to n times using Recursion
 
 public class A{
 	static int i=1;
@@ -46,7 +46,26 @@ public class A{
 	}
 }
 
-// Print Number n to 0 times using Recursion
+------or-------
+
+// using Backtracking (Do task after the function call. Last is executed first)
+// Linearly increasing order. 
+public class A{
+	static void test(int n) {
+		if(n<1)
+			return;
+		else
+			test(n-1);
+			System.out.print(n+" "); //Backtracking
+	}
+	
+	public static void main(String[] args) {
+		int n=5;
+		test(n);
+	}
+}
+
+// Print Number n to 1 times using Recursion
 
 public class A{
 	static void test(int n) {
@@ -59,5 +78,25 @@ public class A{
 	
 	public static void main(String[] args) {
 		test(5);
+	}
+}
+
+------or-------
+	
+//using Backtracking
+
+public class A{
+	
+	static void test(int i,int n) {
+		if(i>n)
+			return;
+		else
+			test(i+1,n);
+			System.out.print(i+" ");
+	}
+	
+	public static void main(String[] args) {
+		int n=5;
+		test(1,n);
 	}
 }
