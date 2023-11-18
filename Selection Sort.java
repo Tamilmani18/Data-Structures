@@ -12,7 +12,7 @@ public class B{
 			arr[i]=sc.nextInt();
 		}
 		
-		// swap until before last element
+		// swap until second last element
 		for(int i=0;i<=n-2;i++) { 
 			// Assume the current index is the minimum element
 			int min=i;
