@@ -54,16 +54,16 @@ public class B{
 		int n = sc.nextInt();
         
 		int[] arr= new int[n];
-        System.out.println("Enter Elements of Array: ");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
+        	System.out.println("Enter Elements of Array: ");
+        	for (int i = 0; i < n; i++) {
+            		arr[i] = sc.nextInt();
+        	}
         
-        mergeSort(arr, 0, n - 1);
+        	mergeSort(arr, 0, n - 1);
         
-        System.out.println("After sorting array: ");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        	System.out.println("After sorting array: ");
+        	for (int i = 0; i < n; i++) {
+            		System.out.print(arr[i] + " ");
+        	}
 	}
 }
